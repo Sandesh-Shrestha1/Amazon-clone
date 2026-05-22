@@ -36,14 +36,16 @@ a{
     animation-delay: 1.5s;
     overflow: hidden;
     flex-direction: column;
+    top: 0;
+    left: 0;
 }
 
 @keyframes slideUp {
     from{
-        height: 100%;
+        transform: translateY(0);
     }
     to{
-        height: 0px;
+        transform: translateY(-100%);
     }
 }
 
