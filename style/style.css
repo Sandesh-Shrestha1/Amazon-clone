@@ -25,6 +25,7 @@ a{
     justify-content: space-between;
     align-items: center;
     color: white;
+    align-items: center;
 }
 
 .country-selection{
@@ -269,39 +270,146 @@ a{
 
 .alingment{
     display: flex;
-    justify-content: center;
-}
-
-.slide-bar{
-    position: relative;
-    margin: 10px 0px;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    margin: 20px 30px;
     background-color: white;
-    padding: 20px 10px;
-    width: 96%;
-    align-items: center;
+    padding: 20px;
 }
 
-.slide-bar div h2{
-    margin-left: 20px;
+.alingment::-webkit-scrollbar{
+    display: none;
 }
 
 .images-product{
     display: flex;
-    scroll-snap-type: x mandatory;
-    overflow-x: scroll;
-    gap: 20px;
-    justify-content: space-between;
-    margin: 20px;
-    scroll-behavior: smooth;
+    align-items: center;
+    justify-content: center;
+    animation: slide 10s linear infinite;
+    flex-shrink: 0;
+}
+
+.alingment:hover .images-product{
+    animation-play-state: paused;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
 }
 
 .img-paint{
-    width: 200px;
+    width: 15rem;
+    height: 20rem;
+    object-fit: cover;
+    padding-right: 1rem;
+    cursor: pointer;
+}
+
+.behind-product{
+    display:  flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    margin: 20px 30px;
+}
+
+.group{
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    animation: slideani 10s linear infinite;
+}
+
+@keyframes slideani {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.behind-product:hover .group{
+    animation-play-state: paused;
+}
+
+.context{
+    margin: 20px 30px;
+    background-color: white;
+    width: 19rem;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    transition: all 0.2s ease-in;
+}
+
+.context:hover{
+    background-color: rgb(245, 178, 62);
+    color: white;
+}
+
+.another-behind{
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: hidden;
+    margin: 20px 30px;
+}
+
+.another-group{
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    animation: slider 10s linear infinite;
+}
+
+@keyframes slider {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.another-behind:hover .another-group{
+    animation-play-state: paused;
+}
+
+.content-alingment{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    max-width: 24%;
+    min-width: 200px;
+    background-color: white;
+    gap: 20px;
+    padding: 15px 20px;
+    animation: popOff 1.4s ease-in forwards;
+}
+
+.content img{
+    max-width: 300px;
     height: 300px;
     object-fit: cover;
-    flex-shrink: 0;
-    mask-position: bottom;
-    border: 2px solid;
+    object-position: center;
 }
 
 .background-color{
@@ -310,6 +418,22 @@ a{
     display: flex;
     height: 13rem;
     align-items: center;
+}
+
+.box h2{
+    margin-left: 30px;
+    background-color: white;
+    max-width: 200px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease-in;
+}
+
+.box h2:hover{
+    background-color: rgb(245, 178, 62);
+    color: white;
 }
 
 .sign-in-options{
