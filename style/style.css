@@ -18,6 +18,47 @@ a{
     color: black;
 }
 
+.logo-amazon{
+    width: 15rem;
+}
+
+.disclaimer{
+    background-color: black;
+    position: absolute;
+    color: white;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideUp 2s ease-in forwards;
+    animation-delay: 1.5s;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+@keyframes slideUp {
+    from{
+        height: 100%;
+    }
+    to{
+        height: 0px;
+    }
+}
+
+span{
+    color: rgb(248, 188, 78);
+}
+
+.disclaimer h2{
+    font-size: 12rem;
+}
+
+.disclaimer p{
+    font-size: 2rem;
+}
+
 .nav-heading-bar{
     background-color: #131921;
     padding: 10px 20px;
@@ -83,6 +124,7 @@ a{
     max-inline-size: 40px;
     cursor: pointer;
     width: fit-content;
+    background-color: transparent;
 }
 
 .search-box{
@@ -243,18 +285,6 @@ a{
     background-color: white;
     padding: 15px 20px;
     gap: 20px;
-    animation: popOff 1.4s ease-in forwards;
-}
-
-@keyframes popOff {
-    from{
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 .header{
