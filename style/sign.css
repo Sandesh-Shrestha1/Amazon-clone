@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.amazon-logo{
+    width: 7rem;
+}
+
+.box-post{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.box{
+    box-sizing: border-box;
+    padding: 0px 30px;
+    border: 1px solid rgb(210, 210, 210);
+    width: 25%;
+    height: 25vw;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.privacy{
+
+    font-size: 0.9rem; 
+    margin-bottom: 20px;
+}
+
+.support{
+    margin-bottom: 20px;
+}
+
+.box h2{
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.desc{
+    margin-bottom: 5px;
+}
+
+.mail{
+    height: 2.2rem;
+    width: 100%;
+    outline: 0 0 2px solid lightblue;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+
+.email-option{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 2.5vw;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    outline: 0;
+    border: 0;
+    background-color: rgb(255, 221, 0);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.business-account{
+    border-top: 1px solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.business-account h2{
+    font-size: 1rem;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.business-account a{
+    font-size: 0.9rem;
+    text-decoration: none;
+}
